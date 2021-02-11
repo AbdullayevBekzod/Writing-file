@@ -1,7 +1,4 @@
 <?php
-	$msg = "";
-	$msgClass = "";
-
 	$name = htmlspecialchars($_POST['name']);
 	$surname = htmlspecialchars($_POST['surname']);
 	$dataob = htmlspecialchars($_POST['dataob']);
@@ -23,8 +20,6 @@
 			fputs($handle, "$gen \n");
 			fputs($handle, $vil);
 		}
-
-
 
 	} else {
 		echo "iltimos barcha bo`limlarni to`ldiring";
@@ -72,10 +67,6 @@
 			<br>
 			<button type="submit" name="submit" class="btn btn-primary">Submit</button>
 		</form>
-
-
 	</div>
-
-	<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
 </html>
